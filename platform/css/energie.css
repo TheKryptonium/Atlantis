@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: color #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.energg{
+    border:solid #333;
+    border-radius: 10px;
+}
+.energ{
+    width:98%;
+    left:5px;
+    right:5px;
+    background-color:white;
+
+}
+.conseil{
+    width:98%;
+    left:5px;
+    right:5px;
+    background-color:white; 
+}
+.container {
+    margin: 0;
+    padding: 10%;
+    background-image: url('../img/tokyo.jpeg');
+    background-position:center ;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #003366;
+    padding: 15px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #003366;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}

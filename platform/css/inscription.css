@@ -1,0 +1,54 @@
+body{
+    font-family: serif;
+    font-size: medium;
+    padding:20px;
+    margin:5x;
+    background-color: #999;
+    max-width: 100%;
+    text-align: center;
+    border:solid 2px aquamarine;
+    margin:auto;
+
+}
+fieldset{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding:10px;
+    border: 1px solid #ccc;
+}
+legend{
+    font-weight:lighter;
+     padding:0 1px 2px 0;
+     left:10px;
+}
+label{
+    display: block;
+    margin:0 0 0;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="postalcode"],
+input[type="password"],
+select {
+       width:25%;
+       padding:5px;
+       border-radius:2px;
+       border:#ccc rgb(33, 20, 79);
+       margin-bottom:1px;
+
+}
+button{
+    background-color: green;
+    color:black;
+    border:solid 2px azure;
+    border-radius:2px;
+    border-top: blueviolet;
+    border-bottom: 2px 0 2px ;
+    cursor: alias;
+}
+button:hover{
+    background-color: #45a049;
+}
+

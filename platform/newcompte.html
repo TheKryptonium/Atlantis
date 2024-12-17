@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="css/inscription.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <a href=""></a>
+        <p></p>
+
+    </head>
+    <body>
+        <h1>INSCRIPTION DES HABITANTS </h1>
+        <form action="/submit" method="POST">
+            <fieldset>
+                <legend> Renseignez vos informations personelles</legend>
+                <fieldset>
+                    <legend>Prenom(s)</legend>   
+                    <label for="firtname"></label>
+                    <input type="text" id="firtname" name="firstname" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Nom(s)</legend>   
+                    <label for="lasttname"></label>
+                    <input type="text" id="lastname" name="lastname" required><br>
+               </fieldset>
+               <fieldset>
+                    <legend>date de naissance</legend>
+                    <label for="birthdate"></label>
+                    <input type="date" id="firtname" name="birthdate" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>adresse</legend>
+                    <label for="address"></label>
+                    <select id="city"  name="city" required>
+                        <option value="">choisissez votre adresse</option>
+                        <option value="gesiland 1">gesiland1</option>
+                        <option value="gesiland 2">gesiland2</option>
+                        <option value="gesiland 3">gesiland3</option>
+                        <option value="gesiland 4">gesiland4</option>
+                        <option value=""gesiland 5>gesiland5</option>
+                    </select><br>
+                </fieldset>
+                <fieldset> 
+                    <legend> code postal</legend>  
+                    <label for="postalcode"></label>
+                    <input type="text" id="postalcode" name="postalcode" resquired><br>
+                </fieldset> 
+                <fieldset>
+                    <legend>adresse elecctronique</legend>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="mail" resquired><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Numero de telephone</legend>
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" resquired><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend> nom d'utilisteur</legend>
+                    <label for="Username"></label>
+                    <input type="text" id="Username" name=="NOM D'UTILISATEUR " resquired><br>
+                </fieldset>
+                <fieldset>
+                    <legend> mot de passe</legend>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" resquired><br>
+                </fieldset>
+                <fieldset>
+                    <legend>confirmer le mot de passe</legend>
+                    <label for="confirmer"></label>
+                    <input type="password" id="password" name="password" resquired><br>
+                </fieldset>
+                <fieldset>
+                    <legend>utilisation et confidentialite</legend>
+                    <label>
+                <input type="checkbox" name="terms" resquired>
+                j'accepte les conditions d'utilisation et la pollitique de confidentialite. </label>
+                    <p>veillez verifier a nouveau vos informations</p>
+                    <button type="submit">soumettre</button>
+                </fieldset>
+            </fieldset>
+        </form>
+      <main>
+
+      </main>
+      <footer>
+        <p>&copy, 2024 awounang-ngounou:tout droit reserve</p>
+      </footer>  
+    </body>
+</html>
