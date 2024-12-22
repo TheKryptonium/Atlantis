@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.boldness{
+    background-color: rgb(8, 8, 77);
+    font-weight: bolder;
+    color: white;
+    height: 100px;
+    padding: 15px 0;
+}
+
+.boldness a{
+    color: white;
+    text-decoration: none;
+}
+
+.boldness h1{
+    text-align: center;
+}
+
+/******************************************INDEX************************************************/
+.index {
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: url('../assets/images/newYork.png') center/cover no-repeat;
+  
+}
+
+.index a{
+    text-decoration: none;
+    color: white;
+}
+
+.index .btn-connex{
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    margin: 15px 10px;
+    padding: 5px 5px;
+    right: 0;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.index .btn-connex:hover{
+    background-color: rgba(255, 255, 255, 0.393);
+}
+
+.index .welcome{
+    height: fit-content;
+    margin: 150px 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 72px;
+    animation: game 1.5s;
+}
+
+@keyframes game{
+    0%{
+        opacity: 0;
+        transform: translateY(180px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/***************************************CONNEXION*****************************************************/
+.connexion{
+    background: url('../assets/images/singapour.png') center/cover no-repeat;
+}
+
+.connexion .contains{
+    margin: 5% auto;
+    border: 5px solid white;
+    border-radius: 15px;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.connexion .form{
+    margin: 2px auto;
+    width: 75%;
+}
+
+.connexion .rad-form{
+    border-radius: 20px;
+    height: 45px;
+}
+
+.connexion .connect{
+    margin-top: 25px;
+    border-radius: 20px;
+    border-color: white;
+    width: 70%;
+    padding: 2px;
+    font-weight: bolder;
+}
+
+/***************************************ACCUEIL*************************************/
+.accueil{
+    background: url('../assets/images/tokyo.jpeg') center/cover no-repeat;
+    height: 100%;
+}
+
+.options{
+    background: url('../assets/images/tokyo.jpeg') fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.accueil .container .option{
+    height: 350px;
+    padding-top: 90px;
+    background-color: rgba(8, 8, 77, 0.226);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    transition: all ease-in-out 1.5s;
+}
+
+.accueil .container .option:hover{
+    background-color: rgba(8, 8, 77, 0.868);
+    transform: scale(2rem);
+}
+
+/************************************TRAFIC ROUTIER*********************************************/
+.trafic .infos{
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    height: 400px;
+    padding-top: 50px;
+}
+
+.trafic .infos .titles, .energy .infos .titles{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.trafic .infos .places{
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+.trafic .infos .rue{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.trafic .infos .description{
+    text-align: justify;
+}
+
+/************************************ENERGIE*********************************************/
+.energy .infos{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 60%;
+    color: white;
+    height: 500px;
+    padding-top: 50px;
+}
+
+.energy .infos .titles{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.energy .infos .conso,
+.energy .infos .unit{
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+/************************************ENVIRONMENT*********************************************/
+.climax .infos{
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.climax .title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.climax .infos .titles{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.climax .infos .conso{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/***************************************DECHETS*****************************************************/
+.dechet .titles, .disaster .titles{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.dechet .infos{
+    color: white;
+    padding-top: 50px;
+}
+
+/*************************************DISASTER********************************/
+.disaster .params .titles{
+    padding-top: 25px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.disaster .result{
+    font-size: 48px;
+}
+
+.disaster .title{
+    font-size: 36px;
+}
+
+.disaster .info{
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    height: 250px;
+    padding-top: 25px;    
+}
+
+/*************************************CITIZENS********************************/
+.city{
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+.citizen{
+    background-color: rgba(128, 128, 128, 0.242);
+    padding-top: 20px;
+    border-radius: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.citizen img{
+    width: 250px;
+    height: 300px;
+}
+
+.citizen .info{
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.citizen .result{
+    font-size: 14px;
+}

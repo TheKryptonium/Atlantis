@@ -1,5 +1,3 @@
-#include <Servo.h>
-
 typedef struct Fires{
   int green;
   int red;
@@ -8,17 +6,23 @@ typedef struct Fires{
 
 
 const int places[4] = {A0, A1, A2, A3};
-const int presence= A4;
+const int luminosity= A4;
+int lights[2] = {5,6};
 
-Servo gate;
 Fires fire1={2,3,4};
 
 int count=0;
+
+/*Declaration de fonctions*/
 
 int busy(int pin);
 void parking();
 void light(int pin1, int pin2, int pin3, int times);
 void fires(Fires fire);
+void night(int* lights);
+void day(int* lights);
+
+/*void setup()*/
 
 void setup() {
   for(int i=2; i<9; i++){
@@ -26,17 +30,26 @@ void setup() {
     digitalWrite(i, LOW);
     }
   Serial.begin(9600);
-  gate.attach(9);
 }
+
+/*Void loop()*/
 
 void loop() {
   parking();
   fires(fire1);
+  
+  if(!busy(luminosity))
+    night(lights);
+  
+  day(lights);
 }
+
+//Ecriture des fonctions
 
 int busy(int pin){
    return (analogRead(pin)<900)? 1:0;
   }
+
 
 void parking(){
   for(int j=0; j<4; j++){
@@ -46,15 +59,12 @@ void parking(){
   Serial.print("Nombre de places restantes: ");
   Serial.println(count);
 
-  if(busy(presence) && count > 0){
-    gate.write(180);
-    Serial.println("Voiture presente");
-    }
 
   Serial.println("**********************************************************************************************");
 
   delay(1000);
-  gate.write(0); count =0; }
+  count=0; }
+
 
 void light(int pin1, int pin2, int pin3, int times){
   digitalWrite(pin1, HIGH);
@@ -69,3 +79,17 @@ void fires(Fires fire){
   light(fire.yellow, fire.green, fire.red, 500);
   light(fire.red, fire.yellow, fire.green, 1000);
   }
+
+
+void day(int* lights){
+  for(int i =0; i<sizeof(lights)/sizeof(int); i++){
+    digitalWrite(lights[i], LOW);
+  }
+}
+
+
+void night(int* lights){
+  for(int i =0; i<sizeof(lights)/sizeof(int); i++){
+    digitalWrite(lights[i], HIGH);
+  }
+ }
